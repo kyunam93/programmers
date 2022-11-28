@@ -1,11 +1,10 @@
 class Solution {
     public int solution(int[] numbers) {
-        int answer = -1;
-        int sum = 45;
+        int answer = 45;
         
-        for(int i=0; i<numbers.length; i++) {
-        	sum-=numbers[i];
+        for(int i:numbers) {
+        	answer-=i;
         }
-        return answer=sum;		
+        return answer;		
     }
 }
